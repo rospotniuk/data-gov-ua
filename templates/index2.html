@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Порти</title>
+
+<link rel='stylesheet' type='text/css' href="{{ url_for('static', filename = 'css/bootstrap.min.css') }}">
+<link rel='stylesheet' type='text/css' href="{{ url_for('static', filename = 'css/sequences.css') }}">
+<link rel='stylesheet' type='text/css' href="{{ url_for('static', filename = 'css/styles.css') }}">
+
+
+<body>
+<div class="container">
+    <nav class="navbar navbar-default">
+        <ul class="nav navbar-nav navbar-collapse">
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Вибір категорії<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li ><a href="{{ url_for("main") }}">Портова статистика з перевалки вантажів</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="{{ url_for("accident")}}">Аварійність на транспорті України</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div class="row" style="margin-top: 15px">
+        <div class="btn-group inline pull-left">
+            <button class="btn-lg menu-button-accident" id="select_sequences">Диаграма</button>
+            <button class="btn-lg menu-button-accident inactive-button" id="select_tree">Дерево</button>
+        </div>
+    </div>
+
+    <!-- sequences diagram: START -->
+    <div class="col-md-12 chart_panel_accident" id="sequences_chart" style="margin-top: 20px; display: block;">
+            <div id="main" class="col-md-6">
+                <div id="sequence" style="left: 1px"></div>
+                  <div id="chart">
+                    <div id="explanation" style="visibility: hidden;">
+                      <span id="percentage"></span><br/>
+                      припадає на даний випадок
+                    </div>
+                  </div>
+            </div>
+           <div id="sidebar" class="col-md-6">
+                <input type="checkbox" checked id="togglelegend"><label for="togglelegend">&nbsp Показати/Згорнути легенду</label>
+                <div id="legend" style="visibility: visible;"></div>
+            </div>
+    </div>
+    <!-- sequences diagram: END -->
+
+    <!-- Stacked bar chart: START -->
+        <div class="col-md-12 chart_panel_accident" id="tree_chart" style="margin-top: 20px; display: none">
+            <div id="tree-container"></div>
+        </div>
+    <!-- Stacked bar chart: END -->
+</div>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="http://d3js.org/topojson.v1.min.js"></script>
+<script src="{{ url_for('static', filename = 'js/bootstrap.min.js') }}"></script>
+<script src="{{ url_for('static', filename = 'js/sequences.js') }}"></script>
+<script src="{{ url_for('static', filename = 'js/tree.js') }}"></script>
+<script src="{{ url_for('static', filename = 'js/panel.js') }}"></script>
+
+<script type="text/javascript">
+      // Hack to make this example display correctly in an iframe on bl.ocks.org
+      d3.select(self.frameElement).style("height", "700px");
+</script>
+
+</body>
+</html>

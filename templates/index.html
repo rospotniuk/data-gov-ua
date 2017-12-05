@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Порти</title>
+
+<link rel='stylesheet' type='text/css' href="{{ url_for('static', filename = 'css/bootstrap.min.css') }}">
+<link rel='stylesheet' type='text/css' href="{{ url_for('static', filename = 'css/styles.css') }}">
+
+<body>
+<div class="container">
+    <nav class="navbar navbar-default">
+        <ul class="nav navbar-nav navbar-collapse">
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Вибір категорії<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li ><a href="{{ url_for("main") }}">Портова статистика з перевалки вантажів</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="{{ url_for("accident")}}">Аварійність на транспорті України</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div class="row" style="margin-top: 15px">
+        <div class="btn-group inline pull-left">
+            <button class="btn-lg menu-button" id="select_sankey">Діаграма зв'язків порт - тип вантажу</button>
+            <button class="btn-lg menu-button inactive-button" id="select_stacked_bar">Динаміка обсягу переробленого вантажу</button>
+            <button class="btn-lg menu-button inactive-button" id="select_map">Розподіл вантажу по портах</button>
+        </div>
+    </div>
+    <!-- Sankey diagram: START -->
+    <div class="col-md-12 chart_panel_port" id="sankey_panel">
+        <div class="row">
+            <div class="col-md-2">
+                </br>
+                <button style="margin-top: 5px" type="button" class="btn btn-info" id="clear_sankey_filters">Очистити фільтри</button>
+            </div>
+            <div class="col-md-2">
+                <label for="Year">Рік</label>
+                <select class="form-control" id="Year" data-default="{{ default_filter_text_1 }}">
+                    <option>{{ default_filter_text_1 }}</option>
+                    {% for year in years %}
+                        <option>{{year}}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="col-md-2">
+                <label for="Month">Місяць</label>
+                <select class="form-control" id="Month" data-default="{{ default_filter_text_1 }}" disabled="disabled">
+                    <option>{{ default_filter_text_1 }}</option>
+                    {% for month in months %}
+                        <option>{{month}}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="col-md-4">
+                <label for="Operator">Портовий оператор</label>
+                <select class="form-control" id="Operator" data-default="{{ default_filter_text_2 }}">
+                    <option>{{ default_filter_text_2 }}</option>
+                    {% for operator in operators %}
+                        <option>{{operator}}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="col-md-2">
+                <label for="Direction">Напрямок</label>
+                <select class="form-control" id="Direction" data-default="{{ default_filter_text_2 }}">
+                    <option>{{ default_filter_text_2 }}</option>
+                    {% for direction in directions %}
+                        <option>{{direction}}</option>
+                    {% endfor %}
+                </select>
+            </div>
+        </div>
+        <div class="col-md-12" id="sankey_chart" style="margin-top: 20px"></div>
+    </div>
+    <!-- Sankey diagram: END -->
+
+    <!-- Stacked bar chart: START -->
+    <div class="col-md-12 chart_panel_port" id="stacked_bar_panel" style="display: none">
+        <div class="row">
+            <div class="col-md-2">
+                </br>
+                <button style="margin-top: 5px" type="button" class="btn btn-info" id="clear_stacked_filters">Очистити фільтри</button>
+            </div>
+            <div class="col-md-4">
+                <label for="Port">Порт</label>
+                <select class="form-control" id="Port" data-default="{{ default_port }}">
+                    {% for port in ports %}
+                        <option>{{port}}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="col-md-2">
+                <label for="Direction2">Напрямок</label>
+                <select class="form-control" id="Direction2" data-default="{{ default_filter_text_2 }}">
+                    <option>{{ default_filter_text_2 }}</option>
+                    {% for direction in directions %}
+                        <option>{{direction}}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="col-md-2">
+                <label for="Bert">Причал</label>
+                <select class="form-control" id="Bert" data-default="{{ default_filter_text_2 }}">
+                    <option>{{ default_filter_text_2 }}</option>
+                    {% for bert in berts %}
+                        <option>{{bert}}</option>
+                    {% endfor %}
+                </select>
+            </div>
+        </div>
+        <div class="col-md-12" id="stached_bar_chart" style="margin-top: 20px"></div>
+    </div>
+    <!-- Stacked bar chart: END -->
+
+    <!-- Map: START -->
+    <div class="col-md-12 chart_panel_port" id="map_panel" style="display: none; margin-bottom: 10px">
+        <div class="col-md-12">
+            <button style="margin-top: 5px" type="button" class="btn btn-info" id="history_color" onclick="add_remove_colors_panel(this)">Показати легенду</button>
+        </div>
+        <div class="col-md-4" style="z-index: 1001; position: absolute; top: 60px; visibility: hidden; opacity: 0.7" id="color_panel">
+             <div class="well" style="max-height: 600px; overflow: auto;">
+        		<ul class="list-group" >
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-offset-1 col-md-12" style="margin-top: 20px; z-index: 1000;">
+            <div id="map_chart" style="width: 900px; height: 600px;"></div>
+        </div>
+
+        <div class="col-md-12" id="main_pie_chart" style="margin-top: 5px;"></div>
+        <div class="col-md-12">
+            </br>
+        </div>
+    </div>
+    <!-- Map: END -->
+
+    <!-- NO DATA Modal window: BEGIN -->
+    <div class="modal fade" id="noDataModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <br><h3 class="modal-title text-danger" align="center">Для даних фільтрів відсутні дані</h3><br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- NO DATA Modal window: END -->
+</div>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="http://d3js.org/topojson.v1.min.js"></script>
+<script src="{{ url_for('static', filename = 'js/bootstrap.min.js') }}"></script>
+<script src="{{ url_for('static', filename = 'js/sankey_d3_plugin.js') }}"></script>
+<script src="{{ url_for('static', filename = 'js/charts.js') }}"></script>
+
+</body>
+</html>

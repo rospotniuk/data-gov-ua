@@ -1,0 +1,283 @@
+.node rect {
+  cursor: move;
+  fill-opacity: .9;
+  shape-rendering: crispEdges;
+}
+
+.node text {
+  pointer-events: none;
+  text-shadow: 0 1px 0 #fff;
+}
+
+.link:hover {
+  stroke-opacity: .5;
+}
+
+div.tooltip {
+    position: absolute;
+    width: 300px;
+    min-height: 1%;
+    padding: 5px;
+    font: 12px sans-serif;
+    border: solid 1px #ddd;
+    border-radius: 10px;
+    pointer-events: none;
+    background: #ffffff;
+    box-shadow: 1px 1px #eee;
+}
+
+.area {
+    fill: lightsteelblue;
+    fill-opacity: 0.5;
+    clip-path: url(#clip);
+    stroke-width: 1px;
+    stroke: steelblue;
+    stroke-dasharray: 5 5;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.brush .extent {
+  stroke: red;
+  fill-opacity: .125;
+  shape-rendering: crispEdges;
+}
+
+.menu-button {
+    position: absolute;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color: #f9f9ff;
+    border: 1px solid #e6e6ff;
+    border-bottom: 1px solid #f9f9ff;
+    min-width: 385px;
+    min-height: 50px;
+    z-index: 999;
+}
+
+.menu-button-accident {
+    position: absolute;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color: #f9f9ff;
+    border: 1px solid #e6e6ff;
+    border-bottom: 1px solid #f9f9ff;
+    min-width: 575px;
+    min-height: 50px;
+    z-index: 999;
+}
+.menu-button:focus {
+    outline: none;
+}
+
+.menu-button-accident:focus {
+    outline: none;
+}
+
+.inactive-button-accident {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e6e6ff;
+}
+
+
+.inactive-button {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e6e6ff;
+}
+
+#select_sankey {
+    margin-left: 15px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 15px;
+}
+
+#select_stacked_bar {
+    margin-left: 386px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+#select_map {
+  margin-left: 770px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 15px;
+}
+
+.chart_panel_port{
+    background-color: #f9f9ff;
+    border-radius: 15px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border: 1px solid #e6e6ff;
+    top: 49px;
+    padding: 15px;
+}
+
+.chart_panel_accident {
+    background-color: #f9f9ff;
+    border-radius: 15px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border: 1px solid #e6e6ff;
+    padding: 15px;
+}
+
+#select_sequences {
+    margin-left: 15px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 15px;
+}
+
+#select_tree {
+    margin-left: 580px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 15px;
+}
+
+#main_pie_chart{
+    top: 100px;
+}
+
+.country {
+    fill: #eee;
+}
+
+.country.UKR {
+    /*fill: #cdc;*/ /* Na zielonej Ukrainie */
+    fill: #fff;
+}
+
+.country-boundary {
+    fill: none;
+    stroke: #aaa;
+}
+
+.region {
+    fill: none;
+}
+
+/*South Ukraine*/
+#crimea, #ks, #od, #zp, #mk {
+    fill: rgba(255, 255, 76, 0.38)
+}
+
+/*Central Ukraine*/
+#ck, #kr, #vn, #pl, #dp {
+    fill: rgba(42, 157, 18, 0.45)
+}
+
+/*North Ukraine*/
+#zt, #kiev, #cn, #sm {
+    fill: rgba(36, 71, 157, 0.45)
+}
+
+/*East Ukraine*/
+#kh, #dn, #lg {
+    fill: rgba(246, 26, 5, 0.41)
+}
+
+/*West Ukraine*/
+#lviv, #volyn, #rv, #km, #te, #if, #uz, #cv {
+    fill: rgba(246, 166, 1, 0.41)
+}
+
+.region-boundary {
+    fill: none;
+    stroke: #777;
+    stroke-dasharray: 2,2;
+    stroke-linejoin: round;
+}
+
+.region-label {
+    fill: #888;
+    fill-opacity: .8;
+    font-size: 15px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    text-anchor: middle;
+}
+
+.coastline, .river, .lake {
+    stroke: rgb(83, 168, 231);
+}
+
+.coastline, .river {
+    fill: none;
+}
+
+.lake {
+    fill: rgb(191, 216, 242);
+}
+
+div.tooltip_map {   
+    position: absolute;           
+    text-align: center;           
+    width: 200px;                  
+    height: 35px;                 
+    padding: 2px;             
+    font: 12px sans-serif;        
+    background: white;   
+    border: 0px;      
+    border-radius: 8px;           
+    pointer-events: none;         
+}
+
+/* TREE */
+
+
+	.node {
+    cursor: pointer;
+  }
+
+  /*.overlay{*/
+      /*background-color: #E3F2FD;*/
+  /*}*/
+
+  .node circle {
+    /*fill: #fff;
+    stroke: steelblue;*/
+    stroke-width: 3px;
+  }
+
+  .node text {
+    font-size:12px;
+    font-family:sans-serif;
+  }
+
+  .link {
+    fill: none;
+    /*stroke: #ccc;*/
+    stroke-width: 2px;
+  }
+
+  .templink {
+    fill: none;
+    stroke: red;
+    stroke-width: 3px;
+  }
+
+  .ghostCircle.show{
+      display:block;
+  }
+
+  .ghostCircle, .activeDrag .ghostCircle{
+       display: none;
+  }
+
+  div.tooltip {
+    position: absolute;
+    text-align: left;
+    width: 180px;
+    height: 40px;
+    padding: 2px;
+    font: 12px sans-serif;
+    background: lightsteelblue;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+  }

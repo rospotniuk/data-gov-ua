@@ -1,0 +1,882 @@
+{
+  "name": "Види транспорту",
+  "children": [
+    {
+      "name": "АВІАЦІЙНИЙ ТРАНСПОРТ",
+      "children": [
+        {
+          "name": "Катастрофи",
+          "children": [
+            {
+              "name": "2012",
+              "level": 4,
+              "value": "2",
+              "r": 5,
+              "fill": "#00aedb"
+            },
+            {
+              "name": "2013",
+              "level": 4,
+              "value": "1",
+              "r": 5,
+              "fill": "#00aedb"
+            },
+            {
+              "name": "2014",
+              "level": 4,
+              "value": "1",
+              "r": 5,
+              "fill": "#00aedb"
+            },
+            {
+              "name": "2015",
+              "level": 4,
+              "value": "2",
+              "r": 5,
+              "fill": "#00aedb"
+            }
+          ],
+          "r": 7,
+          "fill": "#f47835"
+        },
+        {
+          "name": "Аварії",
+          "children": [
+            {
+              "name": "2012",
+              "level": 4,
+              "value": "4",
+              "r": 5,
+              "fill": "#00aedb"
+            },
+            {
+              "name": "2013",
+              "level": 4,
+              "value": "7",
+              "r": 5,
+              "fill": "#00aedb"
+            },
+            {
+              "name": "2014",
+              "level": 4,
+              "value": "2",
+              "r": 5,
+              "fill": "#00aedb"
+            },
+            {
+              "name": "2015",
+              "level": 4,
+              "value": "1",
+              "r": 5,
+              "fill": "#00aedb"
+            }
+          ],
+          "r": 7,
+          "fill": "#f47835"
+        },
+        {
+          "name": "Серйозні інциденти",
+          "children": [
+            {
+              "name": "2012",
+              "level": 4,
+              "value": "6",
+              "r": 5,
+              "fill": "#00aedb"
+            },
+            {
+              "name": "2013",
+              "level": 4,
+              "value": "4",
+              "r": 5,
+              "fill": "#00aedb"
+            },
+            {
+              "name": "2014",
+              "level": 4,
+              "value": "6",
+              "r": 5,
+              "fill": "#00aedb"
+            },
+            {
+              "name": "2015",
+              "level": 4,
+              "value": "2",
+              "r": 5,
+              "fill": "#00aedb"
+            }
+          ],
+          "r": 7,
+          "fill": "#f47835"
+        },
+        {
+          "name": "Інциденти",
+          "children": [
+            {
+              "name": "2012",
+              "level": 4,
+              "value": "116",
+              "r": 5,
+              "fill": "#00aedb"
+            },
+            {
+              "name": "2013",
+              "level": 4,
+              "value": "103",
+              "r": 5,
+              "fill": "#00aedb"
+            },
+            {
+              "name": "2014",
+              "level": 4,
+              "value": "60",
+              "r": 5,
+              "fill": "#00aedb"
+            },
+            {
+              "name": "2015",
+              "level": 4,
+              "value": "62",
+              "r": 5,
+              "fill": "#00aedb"
+            }
+          ],
+          "r": 7,
+          "fill": "#f47835"
+        },
+        {
+          "name": "Загинуло",
+          "children": [
+            {
+              "name": "2012",
+              "level": 4,
+              "value": "8",
+              "r": 5,
+              "fill": "#00aedb"
+            },
+            {
+              "name": "2013",
+              "level": 4,
+              "value": "5",
+              "r": 5,
+              "fill": "#00aedb"
+            },
+            {
+              "name": "2014",
+              "level": 4,
+              "value": "7",
+              "r": 5,
+              "fill": "#00aedb"
+            },
+            {
+              "name": "2015",
+              "level": 4,
+              "value": "2",
+              "r": 5,
+              "fill": "#00aedb"
+            }
+          ],
+          "r": 7,
+          "fill": "#f47835"
+        },
+        {
+          "name": "Травмовано",
+          "children": [
+            {
+              "name": "2012",
+              "level": 4,
+              "value": "17",
+              "r": 5,
+              "fill": "#00aedb"
+            },
+            {
+              "name": "2013",
+              "level": 4,
+              "value": "13",
+              "r": 5,
+              "fill": "#00aedb"
+            },
+            {
+              "name": "2014",
+              "level": 4,
+              "value": "-",
+              "r": 5,
+              "fill": "#00aedb"
+            },
+            {
+              "name": "2015",
+              "level": 4,
+              "value": "-",
+              "r": 5,
+              "fill": "#00aedb"
+            }
+          ],
+          "r": 7,
+          "fill": "#f47835"
+        }
+      ],
+      "r": 10,
+      "fill": "#a200ff"
+    },
+    {
+      "name": "ВОДНИЙ ТРАНСПОРТ",
+      "children": [
+        {
+          "name": "Дуже серйозні аварії (катастрофи)",
+          "children": [
+            {
+              "name": "2012",
+              "level": 4,
+              "value": "3",
+              "r": 5,
+              "fill": "#00aedb"
+            },
+            {
+              "name": "2013",
+              "level": 4,
+              "value": "8",
+              "r": 5,
+              "fill": "#00aedb"
+            },
+            {
+              "name": "2014",
+              "level": 4,
+              "value": "6",
+              "r": 5,
+              "fill": "#00aedb"
+            },
+            {
+              "name": "2015",
+              "level": 4,
+              "value": "4",
+              "r": 5,
+              "fill": "#00aedb"
+            }
+          ],
+          "r": 7,
+          "fill": "#f47835"
+        },
+        {
+          "name": "Серйозні аварії",
+          "children": [
+            {
+              "name": "2012",
+              "level": 4,
+              "value": "12",
+              "r": 5,
+              "fill": "#00aedb"
+            },
+            {
+              "name": "2013",
+              "level": 4,
+              "value": "4",
+              "r": 5,
+              "fill": "#00aedb"
+            },
+            {
+              "name": "2014",
+              "level": 4,
+              "value": "1",
+              "r": 5,
+              "fill": "#00aedb"
+            },
+            {
+              "name": "2015",
+              "level": 4,
+              "value": "5",
+              "r": 5,
+              "fill": "#00aedb"
+            }
+          ],
+          "r": 7,
+          "fill": "#f47835"
+        },
+        {
+          "name": "Серйозні інциденти",
+          "children": [
+            {
+              "name": "2012",
+              "level": 4,
+              "value": "4",
+              "r": 5,
+              "fill": "#00aedb"
+            },
+            {
+              "name": "2013",
+              "level": 4,
+              "value": "3",
+              "r": 5,
+              "fill": "#00aedb"
+            },
+            {
+              "name": "2014",
+              "level": 4,
+              "value": "1",
+              "r": 5,
+              "fill": "#00aedb"
+            },
+            {
+              "name": "2015",
+              "level": 4,
+              "value": "-",
+              "r": 5,
+              "fill": "#00aedb"
+            }
+          ],
+          "r": 7,
+          "fill": "#f47835"
+        },
+        {
+          "name": "Інциденти",
+          "children": [
+            {
+              "name": "2012",
+              "level": 4,
+              "value": "7",
+              "r": 5,
+              "fill": "#00aedb"
+            },
+            {
+              "name": "2013",
+              "level": 4,
+              "value": "6",
+              "r": 5,
+              "fill": "#00aedb"
+            },
+            {
+              "name": "2014",
+              "level": 4,
+              "value": "-",
+              "r": 5,
+              "fill": "#00aedb"
+            },
+            {
+              "name": "2015",
+              "level": 4,
+              "value": "5",
+              "r": 5,
+              "fill": "#00aedb"
+            }
+          ],
+          "r": 7,
+          "fill": "#f47835"
+        },
+        {
+          "name": "Загинуло",
+          "children": [
+            {
+              "name": "2012",
+              "level": 4,
+              "value": "9",
+              "r": 5,
+              "fill": "#00aedb"
+            },
+            {
+              "name": "2013",
+              "level": 4,
+              "value": "8",
+              "r": 5,
+              "fill": "#00aedb"
+            },
+            {
+              "name": "2014",
+              "level": 4,
+              "value": "7",
+              "r": 5,
+              "fill": "#00aedb"
+            },
+            {
+              "name": "2015",
+              "level": 4,
+              "value": "5",
+              "r": 5,
+              "fill": "#00aedb"
+            }
+          ],
+          "r": 7,
+          "fill": "#f47835"
+        },
+        {
+          "name": "Травмовано",
+          "children": [
+            {
+              "name": "2012",
+              "level": 4,
+              "value": "4",
+              "r": 5,
+              "fill": "#00aedb"
+            },
+            {
+              "name": "2013",
+              "level": 4,
+              "value": "1",
+              "r": 5,
+              "fill": "#00aedb"
+            },
+            {
+              "name": "2014",
+              "level": 4,
+              "value": "1",
+              "r": 5,
+              "fill": "#00aedb"
+            },
+            {
+              "name": "2015",
+              "level": 4,
+              "value": "4",
+              "r": 5,
+              "fill": "#00aedb"
+            }
+          ],
+          "r": 7,
+          "fill": "#f47835"
+        }
+      ],
+      "r": 10,
+      "fill": "#a200ff"
+    },
+    {
+      "name": "ЗАЛІЗНИЧНИЙ ТРАНСПОРТ",
+      "children": [
+        {
+          "name": "Катастрофи",
+          "children": [
+            {
+              "name": "2012",
+              "level": 4,
+              "value": "-",
+              "r": 5,
+              "fill": "#00aedb"
+            },
+            {
+              "name": "2013",
+              "level": 4,
+              "value": "-",
+              "r": 5,
+              "fill": "#00aedb"
+            },
+            {
+              "name": "2014",
+              "level": 4,
+              "value": "-",
+              "r": 5,
+              "fill": "#00aedb"
+            },
+            {
+              "name": "2015",
+              "level": 4,
+              "value": "-",
+              "r": 5,
+              "fill": "#00aedb"
+            }
+          ],
+          "r": 7,
+          "fill": "#f47835"
+        },
+        {
+          "name": "Аварії",
+          "children": [
+            {
+              "name": "2012",
+              "level": 4,
+              "value": "1",
+              "r": 5,
+              "fill": "#00aedb"
+            },
+            {
+              "name": "2013",
+              "level": 4,
+              "value": "-",
+              "r": 5,
+              "fill": "#00aedb"
+            },
+            {
+              "name": "2014",
+              "level": 4,
+              "value": "-",
+              "r": 5,
+              "fill": "#00aedb"
+            },
+            {
+              "name": "2015",
+              "level": 4,
+              "value": "-",
+              "r": 5,
+              "fill": "#00aedb"
+            }
+          ],
+          "r": 7,
+          "fill": "#f47835"
+        },
+        {
+          "name": "Серйозні інциденти",
+          "children": [
+            {
+              "name": "2012",
+              "level": 4,
+              "value": "27",
+              "r": 5,
+              "fill": "#00aedb"
+            },
+            {
+              "name": "2013",
+              "level": 4,
+              "value": "20",
+              "r": 5,
+              "fill": "#00aedb"
+            },
+            {
+              "name": "2014",
+              "level": 4,
+              "value": "19",
+              "r": 5,
+              "fill": "#00aedb"
+            },
+            {
+              "name": "2015",
+              "level": 4,
+              "value": "25",
+              "r": 5,
+              "fill": "#00aedb"
+            }
+          ],
+          "r": 7,
+          "fill": "#f47835"
+        },
+        {
+          "name": "Інциденти",
+          "children": [
+            {
+              "name": "2012",
+              "level": 4,
+              "value": "721",
+              "r": 5,
+              "fill": "#00aedb"
+            },
+            {
+              "name": "2013",
+              "level": 4,
+              "value": "698",
+              "r": 5,
+              "fill": "#00aedb"
+            },
+            {
+              "name": "2014",
+              "level": 4,
+              "value": "654",
+              "r": 5,
+              "fill": "#00aedb"
+            },
+            {
+              "name": "2015",
+              "level": 4,
+              "value": "381",
+              "r": 5,
+              "fill": "#00aedb"
+            }
+          ],
+          "r": 7,
+          "fill": "#f47835"
+        },
+        {
+          "name": "Загинуло",
+          "children": [
+            {
+              "name": "2012",
+              "level": 4,
+              "value": "-",
+              "r": 5,
+              "fill": "#00aedb"
+            },
+            {
+              "name": "2013",
+              "level": 4,
+              "value": "-",
+              "r": 5,
+              "fill": "#00aedb"
+            },
+            {
+              "name": "2014",
+              "level": 4,
+              "value": "-",
+              "r": 5,
+              "fill": "#00aedb"
+            },
+            {
+              "name": "2015",
+              "level": 4,
+              "value": "-",
+              "r": 5,
+              "fill": "#00aedb"
+            }
+          ],
+          "r": 7,
+          "fill": "#f47835"
+        },
+        {
+          "name": "Травмовано",
+          "children": [
+            {
+              "name": "2012",
+              "level": 4,
+              "value": "10",
+              "r": 5,
+              "fill": "#00aedb"
+            },
+            {
+              "name": "2013",
+              "level": 4,
+              "value": "-",
+              "r": 5,
+              "fill": "#00aedb"
+            },
+            {
+              "name": "2014",
+              "level": 4,
+              "value": "-",
+              "r": 5,
+              "fill": "#00aedb"
+            },
+            {
+              "name": "2015",
+              "level": 4,
+              "value": "3",
+              "r": 5,
+              "fill": "#00aedb"
+            }
+          ],
+          "r": 7,
+          "fill": "#f47835"
+        }
+      ],
+      "r": 10,
+      "fill": "#a200ff"
+    },
+    {
+      "name": "МІСЬКИЙ ЕЛЕКТРИЧНИЙ ТРАНСПОРТ",
+      "children": [
+        {
+          "name": "ДТП",
+          "children": [
+            {
+              "name": "2012",
+              "level": 4,
+              "value": "393",
+              "r": 5,
+              "fill": "#00aedb"
+            },
+            {
+              "name": "2013",
+              "level": 4,
+              "value": "320",
+              "r": 5,
+              "fill": "#00aedb"
+            },
+            {
+              "name": "2014",
+              "level": 4,
+              "value": "267",
+              "r": 5,
+              "fill": "#00aedb"
+            },
+            {
+              "name": "2015",
+              "level": 4,
+              "value": "102",
+              "r": 5,
+              "fill": "#00aedb"
+            }
+          ],
+          "r": 7,
+          "fill": "#f47835"
+        },
+        {
+          "name": "Загинуло",
+          "children": [
+            {
+              "name": "2012",
+              "level": 4,
+              "value": "2",
+              "r": 5,
+              "fill": "#00aedb"
+            },
+            {
+              "name": "2013",
+              "level": 4,
+              "value": "2",
+              "r": 5,
+              "fill": "#00aedb"
+            },
+            {
+              "name": "2014",
+              "level": 4,
+              "value": "9",
+              "r": 5,
+              "fill": "#00aedb"
+            },
+            {
+              "name": "2015",
+              "level": 4,
+              "value": "1",
+              "r": 5,
+              "fill": "#00aedb"
+            }
+          ],
+          "r": 7,
+          "fill": "#f47835"
+        },
+        {
+          "name": "Травмовано",
+          "children": [
+            {
+              "name": "2012",
+              "level": 4,
+              "value": "86",
+              "r": 5,
+              "fill": "#00aedb"
+            },
+            {
+              "name": "2013",
+              "level": 4,
+              "value": "29",
+              "r": 5,
+              "fill": "#00aedb"
+            },
+            {
+              "name": "2014",
+              "level": 4,
+              "value": "93",
+              "r": 5,
+              "fill": "#00aedb"
+            },
+            {
+              "name": "2015",
+              "level": 4,
+              "value": "66",
+              "r": 5,
+              "fill": "#00aedb"
+            }
+          ],
+          "r": 7,
+          "fill": "#f47835"
+        }
+      ],
+      "r": 10,
+      "fill": "#a200ff"
+    },
+    {
+      "name": "АВТОМОБІЛЬНИЙ ТРАНСПОРТ ЗАГАЛЬНОГО КОРИСТУВАННЯ",
+      "children": [
+        {
+          "name": "ДТП",
+          "children": [
+            {
+              "name": "2012",
+              "level": 4,
+              "value": "1989",
+              "r": 5,
+              "fill": "#00aedb"
+            },
+            {
+              "name": "2013",
+              "level": 4,
+              "value": "2016",
+              "r": 5,
+              "fill": "#00aedb"
+            },
+            {
+              "name": "2014",
+              "level": 4,
+              "value": "1877",
+              "r": 5,
+              "fill": "#00aedb"
+            },
+            {
+              "name": "2015",
+              "level": 4,
+              "value": "577",
+              "r": 5,
+              "fill": "#00aedb"
+            }
+          ],
+          "r": 7,
+          "fill": "#f47835"
+        },
+        {
+          "name": "Загинуло",
+          "children": [
+            {
+              "name": "2012",
+              "level": 4,
+              "value": "75",
+              "r": 5,
+              "fill": "#00aedb"
+            },
+            {
+              "name": "2013",
+              "level": 4,
+              "value": "55",
+              "r": 5,
+              "fill": "#00aedb"
+            },
+            {
+              "name": "2014",
+              "level": 4,
+              "value": "60",
+              "r": 5,
+              "fill": "#00aedb"
+            },
+            {
+              "name": "2015",
+              "level": 4,
+              "value": "50",
+              "r": 5,
+              "fill": "#00aedb"
+            }
+          ],
+          "r": 7,
+          "fill": "#f47835"
+        },
+        {
+          "name": "Травмовано",
+          "children": [
+            {
+              "name": "2012",
+              "level": 4,
+              "value": "781",
+              "r": 5,
+              "fill": "#00aedb"
+            },
+            {
+              "name": "2013",
+              "level": 4,
+              "value": "916",
+              "r": 5,
+              "fill": "#00aedb"
+            },
+            {
+              "name": "2014",
+              "level": 4,
+              "value": "887",
+              "r": 5,
+              "fill": "#00aedb"
+            },
+            {
+              "name": "2015",
+              "level": 4,
+              "value": "452",
+              "r": 5,
+              "fill": "#00aedb"
+            }
+          ],
+          "r": 7,
+          "fill": "#f47835"
+        }
+      ],
+      "r": 10,
+      "fill": "#a200ff"
+    }
+  ],
+  "r": 12,
+  "fill": "#8ec127"
+}
